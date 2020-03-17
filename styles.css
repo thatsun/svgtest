@@ -8,7 +8,7 @@ html, body{
     display: flex;
     flex-direction: column;  
     transform: translate(-5px) scale(0.991);
-    
+    font-size: 10px;
     
 }
 .container {
@@ -443,7 +443,7 @@ input:checked + .slider:before {
     }
     .pinverde {
         transform: scale(--scale);
-        width: 50px;
+        width: 15vw;
     }
     .animationcontainer{
         flex-direction: column;
@@ -469,7 +469,7 @@ input:checked + .slider:before {
 
     }    
     .title{
-        font-size: 30px;
+        font-size: 2em;
         height: 50px ;
         line-height: 50px;
     }

@@ -5,7 +5,7 @@ if(screen.width>600){
 
 }
 else{
-    root.style.setProperty('--scale', "2");
+    root.style.setProperty('--scale', "4");
 
 }
 
@@ -15,10 +15,10 @@ function res(){
 
     }
     else{
-        root.style.setProperty('--scale', "2");
+        root.style.setProperty('--scale', "4");
 
     }
-    alert(root.style.getPropertyValue('--scale'));
+    
 
 };
 window.onresize =res();
