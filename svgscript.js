@@ -1,27 +1,4 @@
 
-let root = document.documentElement;
-if(screen.width>600){
-    root.style.setProperty('--scale', "4");
-
-}
-else{
-    root.style.setProperty('--scale', "1");
-
-}
-
-function res(){
-    if(screen.width>600){
-        root.style.setProperty('--scale', "4");
-
-    }
-    else{
-        root.style.setProperty('--scale', "1");
-
-    }
-    
-
-};
-window.onresize =res();
 
 
 function filterOn(){

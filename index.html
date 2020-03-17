@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css"  href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <script type="text/javascript" src="svgscript.js"></script>
+    
 
 </head>
 <body>    
@@ -20,11 +21,11 @@
        
        
         <h1 class="title" >Welcome to {svg demo}</h1>
-        <div class="animationcontainer">
+        <div class="animationcontainer" id="logo">
             <div class="animationcontainer2">
                     <div class="shapeshifter play"  style="background-image: url(sprite_30fps.svg)"></div>
             </div>
-            <div class="slidermenu">
+            <div class="slidermenu" id="slidermenu">
                 <div class="sliderbox">
                     <label class="switch">
                         <input type="checkbox" id="blurOn" onclick="filterOn()">
@@ -125,6 +126,42 @@
                 <img class= "mundoimg" src="mundito.svg" alt="">
             </div>        
         </div>        
-    </div>    
+    </div>
+    <script>
+        let menu=document.getElementById("slidermenu");
+        let logo=document.getElementById("logo");
+        document.getElementsByTagName("BODY")[0].onresize = function() {myFunction()};
+
+
+        function myFunction() {
+  
+            console.log(window.innerWidth);
+            if(window.innerWidth<window.innerHeight){
+                if(window.innerWidth>720){
+                    logo.style="transform:scale(2)";
+                    menu.style="transform: translate(-25px,0)";
+                
+
+                }
+                else{
+                    logo.style="transform: scale(1.1)";
+                    menu.style="transform: translate(-5px,0)";
+                
+                }
+                
+
+            }
+            else{
+                logo.style="transform: scale(0.9)";
+                menu.style="transform: translate(-5px,0)";
+
+            }           
+            
+            
+        }
+
+    </script>
+    
 </body>
+
 </html>
