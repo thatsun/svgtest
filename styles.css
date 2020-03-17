@@ -414,7 +414,7 @@ input:checked + .slider:before {
     color: rgb(177, 11, 66);
     font-size: 60px;
 }
-@media only screen and ( orientation: portrait ) {
+@media (max-width: 720px) and ( orientation: portrait ) {
     .mundito{
        
         transform: scale(2);
@@ -453,13 +453,9 @@ input:checked + .slider:before {
         width: 80px;
     }
     .pollitocontainer{
-        width: 150px;
-        transform: scale(0.5);
+        width: 150px;      
 
-    }
-    .pollito{
-        transform: scale(0.5);
-    }
+    }    
     .title{
         font-size: 30px
     }
