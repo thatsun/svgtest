@@ -1,21 +1,21 @@
 
 let root = document.documentElement;
 if(screen.width>600){
-    root.style.setProperty('--scale', "2");
+    root.style.setProperty('--scale', "1");
 
 }
 else{
-    root.style.setProperty('--scale', "1");
+    root.style.setProperty('--scale', "2");
 
 }
 
 function res(){
     if(screen.width>600){
-        root.style.setProperty('--scale', "2");
+        root.style.setProperty('--scale', "1");
 
     }
     else{
-        root.style.setProperty('--scale', "1");
+        root.style.setProperty('--scale', "2");
 
     }
     alert(root.style.getPropertyValue('--scale'));
