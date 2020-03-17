@@ -426,6 +426,11 @@ input:checked + .slider:before {
     flex-direction: column;    
 
 }
+.moviletitle{
+    font-size: 9vh;
+    height: 15vh ;
+    line-height: 15vh;
+}
 @media all and ( orientation: portrait ) {
     .mundito{
        
@@ -481,9 +486,4 @@ input:checked + .slider:before {
         line-height: 50px;
     }
 
-}
-.moviletitle{
-    font-size: 9vh;
-    height: 15vh ;
-    line-height: 15vh;
 }
