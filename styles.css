@@ -483,7 +483,7 @@ input:checked + .slider:before {
 
 }
 .moviletitle{
-    font-size: 100px;
-    height: 120px ;
-    line-height: 120px;
+    font-size: 9vh;
+    height: 15vh ;
+    line-height: 15vh;
 }
