@@ -39,7 +39,7 @@ html, body{
             
     }
 }
-h1{
+.title{
     font-size: 9vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
@@ -151,6 +151,7 @@ h1{
 .pinverde.play {
     animation-name: play10;
 }
+
 .delay {
   
     animation-delay: 200ms;
@@ -366,3 +367,101 @@ input:checked + .slider:before {
     
     
 }
+.mundito {
+    width: 50vw;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;    
+    transform: scale(5);
+    
+
+}
+
+
+.munditocontainer {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    background-color: rgb(129, 178, 197);
+    overflow: hidden;
+    
+
+}
+.boxwhite{
+    background-color: azure;
+    width: 50vw;
+    height: 600px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;    
+}
+.composition{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(177, 11, 66);
+    font-size: 60px;
+}
+@media only screen and ( max-width: 800px ) {
+    .mundito{
+       
+        transform: scale(2);
+        height: 400px;
+    }
+    .munditocontainer{        
+        background-color: rgb(197, 103, 40);
+        height: 800px;
+    }
+    .boxwhite{
+        width: 100vw;
+        height: 100px;      
+        
+        
+
+        background-color: rgba(0, 0, 0, 0.007);
+
+    }
+    .composition{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        
+    }
+    .pinverde {
+        transform: scale(0.5,0.5);
+        width: 50px;
+    }
+    .animationcontainer3{
+        width: 50px;
+
+    }
+    .foxtail{
+        transform:  scale(3);
+    }
+    .foxcontainer{
+        width: 80px;
+    }
+    .pollitocontainer{
+        width: 150px;
+        transform: scale(0.5);
+
+    }
+    .pollito{
+        transform: scale(0.5);
+    }
+    .title{
+        font-size: 30px
+    }
+}
+
