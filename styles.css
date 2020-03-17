@@ -428,8 +428,10 @@ input:checked + .slider:before {
 }
 .moviletitle{
     font-size: 9vh;
-    height: 15vh ;
-    line-height: 15vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: block;
+    color: rgb(178, 221, 78);
 }
 @media all and ( orientation: portrait ) {
     .mundito{
