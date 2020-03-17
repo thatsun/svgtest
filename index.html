@@ -21,7 +21,7 @@
        
        
         <h1 class="title" >Welcome to {svg demo}</h1>
-        <div class="animationcontainer" >
+        <div class="animationcontainer" id="mainmenu" >
             <div class="logoholder" id="logo"> 
                     <div class="animationcontainer2">
                             <div class="shapeshifter play"  style="background-image: url(sprite_30fps.svg)"></div>
@@ -132,6 +132,7 @@
     <script>
         let menu=document.getElementById("slidermenu");
         let logo=document.getElementById("logo");
+        let mainmenu=document.getElementById("mainmenu");
         myFunction();
         document.getElementsByTagName("BODY")[0].onresize = function() {myFunction()};
 
@@ -141,15 +142,17 @@
             console.log(window.innerWidth);
             if(window.innerWidth<window.innerHeight){
                 if(window.innerWidth>600){
-                    logo.style="transform:scale(3)";
-                    menu.style="transform:scale(3) translate(-25px,0px)";
+                    logo.style="transform:scale(2) translate(-25px,25vh)";
+                    menu.style="transform:scale(3) translate(-25px,25vh)";
                     
+                    mainmenu.style="height: 100vh";
                 
 
                 }
                 else{
-                    logo.style="transform: scale(1.1)";
-                    menu.style="transform:scale(1.1) translate(-5px,0px)";
+                    logo.style="transform: scale(1.1) translate(0,10px)";
+                    menu.style="transform:scale(1) translate(-5px,30px)";
+                    mainmenu.style="height: 400px";
                     
                 
                 }
@@ -157,9 +160,9 @@
 
             }
             else{
-                logo.style="transform: scale(0.9)";
+                logo.style="transform: scale(0.9) translate(0,0)";
                 menu.style="transform:scale(1) translate(-5px,0px)";
-                
+                mainmenu.style="height: 200px";
 
             }           
             
