@@ -92,7 +92,7 @@ html, body{
 }
 .animationcontainer{
     width: 100vw;
-    height: 30vh;
+    height: 158px;
     display: flex;
     align-content: center;
     text-align: center;
@@ -103,7 +103,7 @@ html, body{
 }
 .animationcontainerhorizontal{
     width: 100vw;
-    height: 20vh;
+    height: 158px;
     display: flex;
     align-content: center;
     justify-content: center;

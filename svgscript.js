@@ -1,3 +1,7 @@
+
+
+
+
 function filterOn(){
     var checkBoxBlur = document.getElementById("blurOn");
     var checkBoxGray = document.getElementById("grayscaleOn");
