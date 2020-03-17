@@ -1,5 +1,27 @@
 
+let root = document.documentElement;
+if(screen.width>600){
+    root.style.setProperty('--scale', "2");
 
+}
+else{
+    root.style.setProperty('--scale', "1");
+
+}
+
+function res(){
+    if(screen.width>600){
+        root.style.setProperty('--scale', "2");
+
+    }
+    else{
+        root.style.setProperty('--scale', "1");
+
+    }
+    alert(root.style.getPropertyValue('--scale'));
+
+};
+window.onresize =res();
 
 
 function filterOn(){
