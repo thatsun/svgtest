@@ -457,8 +457,8 @@ input:checked + .slider:before {
     .animationcontainer{
         flex-direction: column;
         justify-content: right;
-        height: 50vh;
-        flex-wrap: wrap;
+        height: 100vh;
+        
     }
     .animationcontainer3{
         width: 50px;
