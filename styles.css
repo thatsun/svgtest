@@ -442,9 +442,18 @@ input:checked + .slider:before {
         transform: scale(0.5,0.5);
         width: 50px;
     }
+    .animationcontainer{
+        flex-direction: column;
+        justify-content: right;
+        
+        height: 510px;
+    }
     .animationcontainer3{
         width: 50px;
 
+    }
+    .slidermenu{
+        transform:  scale(1.2) translate(-10px,50px);
     }
     .foxtail{
         transform:  scale(3);
@@ -457,7 +466,9 @@ input:checked + .slider:before {
 
     }    
     .title{
-        font-size: 30px
+        font-size: 30px;
+        height: 50px ;
+        line-height: 50px;
     }
 }
 
