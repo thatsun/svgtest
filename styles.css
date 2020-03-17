@@ -482,3 +482,8 @@ input:checked + .slider:before {
     }
 
 }
+.moviletitle{
+    font-size: 10vh;
+    height: 10vh ;
+    line-height: 10vh;
+}
