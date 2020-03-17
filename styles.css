@@ -414,7 +414,7 @@ input:checked + .slider:before {
     color: rgb(177, 11, 66);
     font-size: 60px;
 }
-@media only screen and ( max-width: 600px ) {
+@media only screen and ( orientation: portrait ) {
     .mundito{
        
         transform: scale(2);
