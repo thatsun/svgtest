@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Svg Demo" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Svg Demo</title>
+    <link rel="stylesheet" type="text/css"  href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script type="text/javascript" src="svgscript.js"></script>
+
+</head>
+<body>    
+    <div class="container" id="blurObject">
+        <div class="backimages">
+            <img class="clipimg trasleft" src="api_backimage.png">
+            <img class="clipimg trasrigth" src="api_backimage.png">
+
+        </div>
+       
+       
+        <h1>Welcome to {svg demo}</h1>
+        <div class="animationcontainer">
+            <div class="animationcontainer2">
+                    <div class="shapeshifter play"  style="background-image: url(sprite_30fps.svg)"></div>
+            </div>
+            <div class="slidermenu">
+                <div class="sliderbox">
+                    <label class="switch">
+                        <input type="checkbox" id="blurOn" onclick="filterOn()">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="blurslidertextbox">
+                        <h2 class="slidertext">Blur</h2>
+                    </div>
+                            
+                </div>
+                <br>
+                <div class="sliderbox">
+                        <label class="switch">
+                            <input type="checkbox" id="grayscaleOn" onclick="filterOn()">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="blurslidertextbox">
+                            <h2 class="slidertext">grayscaleOn</h2>
+                        </div>
+                                
+                </div>
+                <br>
+                <div class="sliderbox">
+                        <label class="switch">
+                            <input type="checkbox" id="invertOn" onclick="filterOn()">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="blurslidertextbox">
+                            <h2 class="slidertext">invertOn</h2>
+                        </div>
+                                
+                </div>
+                <br>
+                <div class="sliderbox">
+                        <label class="switch">
+                            <input type="checkbox" id="hue-RotateOn" onclick="filterOn()">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="blurslidertextbox">
+                            <h2 class="slidertext">hue-RotateOn</h2>
+                        </div>
+                                
+                </div>
+
+            </div>
+            
+                     
+        </div>
+        <div class="pollitos">
+                <div class="pollitocontainer" style="transform: scale(0.4,0.4) translate(-38px,-100px)">
+                        <div class="pollito play"  style="background-image: url(pollito_30fps.svg); animation-delay: 2000ms"></div>
+                </div> 
+                <div class="pollitocontainer" style="transform: scale(0.4,0.4) translate(-50px,-100px)">
+                        <div class="pollito play"  style="background-image: url(pollito_30fps.svg); animation-delay: 1000ms"></div>
+                </div>               
+                <div class="pollitocontainer" style="transform: scale(-0.4,0.4) translate(-1px,-100px)">
+                        <div class="pollito play"  style="background-image: url(pollito_30fps.svg); animation-delay: 200ms"></div>
+                </div>               
+                <div class="pollitocontainer" style="transform: scale(0.4,0.4) translate(-10px,-100px)">
+                        <div class="pollito play"  style="background-image: url(pollito_30fps.svg); animation-delay: 500ms"></div>
+                </div>            
+        </div>     
+        <div class="animationcontainerhorizontal">
+            <div class="foxcontainer" style="transform: scale(-1,1)">
+                <div class="foxtail play"  style="background-image: url(foxtail.svg); animation-delay: 10ms"></div>
+            </div>    
+            <div class="animationcontainer3">
+                    <div class="pinverde play" style="background-image: url(pinverde.svg)"></div>
+            </div>
+            <div class="animationcontainer3">
+                    <div class="pinverde play"  style="background-image: url(pinverde.svg); animation-delay: 400ms"></div>
+            </div>
+            <div class="animationcontainer3">
+                    <div class="pinverde play"  style="background-image: url(pinverde.svg); animation-delay: 800ms"></div>
+            </div>    
+            <div class="animationcontainer3">
+                    <div class="pinverde play"  style="background-image: url(pinverde.svg); animation-delay: 1200ms"></div>
+            </div>    
+            <div class="animationcontainer3">
+                    <div class="pinverde play"  style="background-image: url(pinverde.svg); animation-delay: 1600ms"></div>
+            </div>    
+            <div class="animationcontainer3">
+                    <div class="pinverde play"  style="background-image: url(pinverde.svg); animation-delay: 50ms"></div>
+            </div>
+            <div class="foxcontainer" style="transform: scale(1,1)">
+                <div class="foxtail play"  style="background-image: url(foxtail.svg); animation-delay: 1000ms"></div>
+            </div>        
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

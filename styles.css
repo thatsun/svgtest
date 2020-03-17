@@ -1,0 +1,368 @@
+html, body{
+    height:100%;
+    width:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;  
+    transform: translate(-5px) scale(0.991);
+    
+    
+}
+.container {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height: 200vh;
+    background: rgb(31,31,31);
+    background: linear-gradient(121deg, rgba(31,31,31,1) 0%, rgba(60,59,59,1) 35%, rgba(50,50,50,1) 66%, rgba(33,33,33,1) 100%);
+    transform: scale(1.01);
+    
+}
+
+.imgcontainer {
+    height: 50vh;
+    width: 50vh;
+    -webkit-animation: rotation 3s infinite linear ; 
+    
+}    
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+            
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+            
+    }
+}
+h1{
+    font-size: 9vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: block;
+    color: rgb(178, 221, 78);
+}
+.green {
+    overflow: hidden;
+}
+.gradient {
+    background: rgb(31,31,31);
+    background: linear-gradient(121deg, rgba(31,31,31,1) 0%, rgba(60,59,59,1) 35%, rgba(50,50,50,1) 66%, rgba(33,33,33,1) 100%);
+
+}
+.exp {
+    background-size: contain;
+    
+
+}
+.animationcontainer2{
+    width: 158px;
+    height: 158px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    -webkit-animation: rotation2 2.5s ease-in-out infinite ; 
+    
+    
+}
+@-webkit-keyframes rotation2 {
+    from {
+            -webkit-transform: rotate(0deg);
+            
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+            
+    }
+}
+.animationcontainer3{
+    width: 53px;
+    height: 158px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    
+    
+    
+}
+.animationcontainer{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+.animationcontainerhorizontal{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+@keyframes play45 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -7110px 0px;
+    }
+  }
+  .shapeshifter {
+    animation-duration: 1500ms;
+    animation-timing-function: steps(45);
+    width: 158px;
+    height: 158px;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+    
+    
+  }
+  .shapeshifter.play {
+    animation-name: play45;
+}
+
+@keyframes play10 {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -4680px 0px;
+    }
+}
+.pinverde {
+    animation-duration: 3000ms;
+    animation-timing-function: steps(90);
+    width: 52px;
+    height: 105px;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+}
+.pinverde.play {
+    animation-name: play10;
+}
+.delay {
+  
+    animation-delay: 200ms;
+}
+.pollitos{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+} 
+@keyframes play150 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -23700px 0px;
+    }
+}
+.pollito {
+    animation-duration: 5000ms;
+    animation-timing-function: steps(150);
+    width: 158px;
+    height: 158px;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+    
+}
+.pollito.play {
+    animation-name: play150;
+}
+.pollitocontainer{
+    width: 200px;
+    height: 158px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgb(27, 27, 27);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color:  rgb(76, 80, 75);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: rgba(255, 238, 2, 0.87);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px  rgb(44, 46, 44);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+.slidermenu{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: right;
+    transform: scale(0.9,0.9);
+}
+.sliderbox {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    flex-direction: row;
+    justify-content: right;
+    transform: translate(30px);
+    
+}
+.slidertext {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(247, 225, 29);
+
+}
+.blurslidertextbox{
+    display: flex;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    transform: translate(20px);
+
+
+}
+.clipimg {
+    
+    width: 100vw;
+    height: 50vh;    
+    position: absolute;
+    
+    
+    animation-name: clipper1 ;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    
+}
+@keyframes clipper1{
+    0% {
+        clip-path: circle(35%);
+    }
+    50% {
+        clip-path: circle(65%);
+    }
+    100% {
+        clip-path: circle(35%);
+
+    }
+
+}
+.trasleft{
+    transform: translate(10vw,0);
+    z-index: -800;
+
+}
+.trasrigth{
+    transform: translate(-110vw,0);
+    z-index: -700;
+
+}
+.backimages{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+   
+
+}
+@keyframes playFox {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -2790px 0px;
+    }
+}
+.foxtail {
+    animation-duration: 3000ms;
+    animation-timing-function: steps(90);
+    width: 31px;
+    height: 21px;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+    transform: scale(5 ,5);
+
+}
+.foxtail.play {
+    animation-name: playFox;
+}
+.foxcontainer{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;  
+    
+    
+}
